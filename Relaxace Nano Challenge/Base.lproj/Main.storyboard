@@ -26,6 +26,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="74" y="94"/>
+        </scene>
+        <!--Breathe View Controller-->
+        <scene sceneID="bOy-x0-eSd">
+            <objects>
+                <viewController storyboardIdentifier="breatheVC" id="fsN-le-3zY" customClass="BreatheViewController" customModule="Relaxace_Nano_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u4U-Nc-cnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-2p-BIj">
+                                <rect key="frame" x="154.00917431192693" y="398.27522935779848" width="100.00000000000011" height="99.999999999999901"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="iiZ-GR-BTk"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleView" destination="vNG-2p-BIj" id="kW9-kR-aR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpJ-7H-rbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="94"/>
         </scene>
     </scenes>
 </document>

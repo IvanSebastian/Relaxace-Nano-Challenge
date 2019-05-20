@@ -14,6 +14,7 @@
 		C54F5B362292DF2800EA83C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B342292DF2800EA83C2 /* LaunchScreen.storyboard */; };
 		C54F5B3E2292DF6000EA83C2 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */; };
 		C54F5B422292E3B100EA83C2 /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F5B412292E3B100EA83C2 /* BreatheViewController.swift */; };
+		C54F5B442292E60400EA83C2 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B432292E60400EA83C2 /* Untitled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C54F5B372292DF2800EA83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		C54F5B412292E3B100EA83C2 /* BreatheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewController.swift; sourceTree = "<group>"; };
+		C54F5B432292E60400EA83C2 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = "../../Relaxace/Spritekit Particle/Untitled.png"; sourceTree = "<group>"; };
+		C54F5B472292EC3F00EA83C2 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +61,34 @@
 		C54F5B2A2292DF2700EA83C2 /* Relaxace Nano Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				C54F5B462292EC3600EA83C2 /* Assets */,
+				C54F5B452292EC2400EA83C2 /* Controller */,
 				C54F5B2B2292DF2700EA83C2 /* AppDelegate.swift */,
-				C54F5B2D2292DF2700EA83C2 /* ViewController.swift */,
 				C54F5B2F2292DF2700EA83C2 /* Main.storyboard */,
 				C54F5B322292DF2800EA83C2 /* Assets.xcassets */,
 				C54F5B342292DF2800EA83C2 /* LaunchScreen.storyboard */,
 				C54F5B372292DF2800EA83C2 /* Info.plist */,
-				C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */,
-				C54F5B412292E3B100EA83C2 /* BreatheViewController.swift */,
+				C54F5B432292E60400EA83C2 /* Untitled.png */,
 			);
 			path = "Relaxace Nano Challenge";
+			sourceTree = "<group>";
+		};
+		C54F5B452292EC2400EA83C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C54F5B2D2292DF2700EA83C2 /* ViewController.swift */,
+				C54F5B412292E3B100EA83C2 /* BreatheViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C54F5B462292EC3600EA83C2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C54F5B472292EC3F00EA83C2 /* Untitled.png */,
+				C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +152,7 @@
 				C54F5B362292DF2800EA83C2 /* LaunchScreen.storyboard in Resources */,
 				C54F5B332292DF2800EA83C2 /* Assets.xcassets in Resources */,
 				C54F5B312292DF2700EA83C2 /* Main.storyboard in Resources */,
+				C54F5B442292E60400EA83C2 /* Untitled.png in Resources */,
 				C54F5B3E2292DF6000EA83C2 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZFS657T4Z;
 				INFOPLIST_FILE = "Relaxace Nano Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6ZFS657T4Z;
 				INFOPLIST_FILE = "Relaxace Nano Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

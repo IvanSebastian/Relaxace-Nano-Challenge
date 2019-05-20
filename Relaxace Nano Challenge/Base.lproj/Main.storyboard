@@ -37,21 +37,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-2p-BIj">
-                                <rect key="frame" x="154.00917431192693" y="398.27522935779848" width="100.00000000000011" height="99.999999999999901"/>
+                                <rect key="frame" x="180.52293577981618" y="424.88073394495405" width="50" height="50.000000000000099"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap &amp; Breathe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9a-OZ-8E4">
+                                <rect key="frame" x="20" y="529" width="374" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="iiZ-GR-BTk"/>
                     </view>
                     <connections>
                         <outlet property="circleView" destination="vNG-2p-BIj" id="kW9-kR-aR7"/>
+                        <outlet property="descLabel" destination="Q9a-OZ-8E4" id="68H-h9-d8N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpJ-7H-rbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="94"/>
+            <point key="canvasLocation" x="1005.7971014492755" y="93.75"/>
         </scene>
     </scenes>
 </document>

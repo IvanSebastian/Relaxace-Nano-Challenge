@@ -10,9 +10,11 @@ import UIKit
 
 class BreatheViewController: UIViewController {
 
+    @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var circleView: UIView!
     var randomX = { return CGFloat.random(in: 50...300)}
     var randomY = { return CGFloat.random(in: 50...300)}
+    var i=0
     
     var colorArray:[UIColor] =
         [
@@ -44,10 +46,56 @@ class BreatheViewController: UIViewController {
         print("start animate")
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.circleView.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
+            
+            for _ in 1...5
+            {
+                if self.circleView.transform == CGAffineTransform(scaleX: 2.5, y: 2.5)
+                {
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+                }
+            }
+            
+           // self.loaded()
+            
+            
+            self.descLabel.text=""
         }) { (_) in
             print("bigger")
         }
     }
+    
+    
+//    func loaded()
+//    {
+//        i+=1
+//    print("Running")
+//
+//        switch i
+//        {
+//        case 1:
+//            let generator = UINotificationFeedbackGenerator()
+//            generator.notificationOccurred(.error)
+//
+//        case 2:
+//            let generator = UINotificationFeedbackGenerator()
+//            generator.notificationOccurred(.error)
+//
+//        case 3:
+//            let generator = UINotificationFeedbackGenerator()
+//            generator.notificationOccurred(.error)
+//
+//        case 4:
+//            let generator = UINotificationFeedbackGenerator()
+//            generator.notificationOccurred(.error)
+//
+//
+//        default:
+//            let generator = UISelectionFeedbackGenerator()
+//            generator.selectionChanged()
+//            i=0
+//        }
+//    }
     
     
     func pickColorArray() -> UIColor

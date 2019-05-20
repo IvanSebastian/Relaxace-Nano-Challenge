@@ -12,6 +12,7 @@
 		C54F5B312292DF2700EA83C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B2F2292DF2700EA83C2 /* Main.storyboard */; };
 		C54F5B332292DF2800EA83C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B322292DF2800EA83C2 /* Assets.xcassets */; };
 		C54F5B362292DF2800EA83C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B342292DF2800EA83C2 /* LaunchScreen.storyboard */; };
+		C54F5B3E2292DF6000EA83C2 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C54F5B322292DF2800EA83C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54F5B352292DF2800EA83C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C54F5B372292DF2800EA83C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C54F5B322292DF2800EA83C2 /* Assets.xcassets */,
 				C54F5B342292DF2800EA83C2 /* LaunchScreen.storyboard */,
 				C54F5B372292DF2800EA83C2 /* Info.plist */,
+				C54F5B3D2292DF6000EA83C2 /* MyParticle.sks */,
 			);
 			path = "Relaxace Nano Challenge";
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 				C54F5B362292DF2800EA83C2 /* LaunchScreen.storyboard in Resources */,
 				C54F5B332292DF2800EA83C2 /* Assets.xcassets in Resources */,
 				C54F5B312292DF2700EA83C2 /* Main.storyboard in Resources */,
+				C54F5B3E2292DF6000EA83C2 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

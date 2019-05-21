@@ -16,6 +16,7 @@ class BreatheViewController: UIViewController {
     var randomY = { return CGFloat.random(in: 50...300)}
     var i=0
     
+    @IBOutlet weak var backgroundView: UIView!
     var colorArray:[UIColor] =
         [
             //            UIColor.generateArrayColor(red: 89, green: 255, blue: 231),
@@ -28,14 +29,15 @@ class BreatheViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backgroundView.backgroundColor = .black
         circleView.layer.cornerRadius = circleView.bounds.height/2
         circleView.backgroundColor = pickColorArray()
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(startAnimate))
         gesture.numberOfTapsRequired = 1
         
-        circleView.isUserInteractionEnabled = true
-        circleView.addGestureRecognizer(gesture)
+backgroundView.isUserInteractionEnabled = true
+        backgroundView.addGestureRecognizer(gesture)
         
         //        startAnimate()
         

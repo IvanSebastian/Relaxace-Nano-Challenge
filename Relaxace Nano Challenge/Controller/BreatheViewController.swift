@@ -16,6 +16,9 @@ class BreatheViewController: UIViewController {
     var randomY = { return CGFloat.random(in: 50...300)}
     var i=0
     
+    var gameTimer :Timer?
+    
+    
     @IBOutlet weak var backgroundView: UIView!
     var colorArray:[UIColor] =
         [
@@ -39,6 +42,9 @@ class BreatheViewController: UIViewController {
 backgroundView.isUserInteractionEnabled = true
         backgroundView.addGestureRecognizer(gesture)
         
+     
+
+        
         //        startAnimate()
         
     }
@@ -46,17 +52,12 @@ backgroundView.isUserInteractionEnabled = true
     @objc func startAnimate ()
     {
         print("start animate")
+        
+    
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.circleView.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
-            
-            for _ in 1...5
-            {
-                if self.circleView.transform == CGAffineTransform(scaleX: 2.5, y: 2.5)
-                {
-                let generator = UIImpactFeedbackGenerator(style: .heavy)
-                generator.impactOccurred()
-                }
-            }
+
+        
             
            // self.loaded()
             

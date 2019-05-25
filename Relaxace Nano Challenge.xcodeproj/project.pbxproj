@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C537B6E922991E460064FD6F /* WheelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537B6E822991E460064FD6F /* WheelController.swift */; };
+		C537B6EB22991EE20064FD6F /* SMRotaryWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537B6EA22991EE20064FD6F /* SMRotaryWheel.swift */; };
+		C537B6ED22991F3A0064FD6F /* SMRotaryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537B6EC22991F3A0064FD6F /* SMRotaryProtocol.swift */; };
+		C537B6EF229920260064FD6F /* SMSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C537B6EE229920260064FD6F /* SMSector.swift */; };
 		C54F5B2C2292DF2700EA83C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F5B2B2292DF2700EA83C2 /* AppDelegate.swift */; };
 		C54F5B2E2292DF2700EA83C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F5B2D2292DF2700EA83C2 /* ViewController.swift */; };
 		C54F5B312292DF2700EA83C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54F5B2F2292DF2700EA83C2 /* Main.storyboard */; };
@@ -83,6 +87,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C537B6E822991E460064FD6F /* WheelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelController.swift; sourceTree = "<group>"; };
+		C537B6EA22991EE20064FD6F /* SMRotaryWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMRotaryWheel.swift; sourceTree = "<group>"; };
+		C537B6EC22991F3A0064FD6F /* SMRotaryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMRotaryProtocol.swift; sourceTree = "<group>"; };
+		C537B6EE229920260064FD6F /* SMSector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSector.swift; sourceTree = "<group>"; };
 		C54F5B282292DF2700EA83C2 /* Relaxace Nano Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relaxace Nano Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54F5B2B2292DF2700EA83C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54F5B2D2292DF2700EA83C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +217,10 @@
 			children = (
 				C54F5B2D2292DF2700EA83C2 /* ViewController.swift */,
 				C54F5B412292E3B100EA83C2 /* BreatheViewController.swift */,
+				C537B6E822991E460064FD6F /* WheelController.swift */,
+				C537B6EA22991EE20064FD6F /* SMRotaryWheel.swift */,
+				C537B6EC22991F3A0064FD6F /* SMRotaryProtocol.swift */,
+				C537B6EE229920260064FD6F /* SMSector.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -452,7 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54F5B2E2292DF2700EA83C2 /* ViewController.swift in Sources */,
+				C537B6E922991E460064FD6F /* WheelController.swift in Sources */,
+				C537B6EF229920260064FD6F /* SMSector.swift in Sources */,
+				C537B6EB22991EE20064FD6F /* SMRotaryWheel.swift in Sources */,
 				C54F5B2C2292DF2700EA83C2 /* AppDelegate.swift in Sources */,
+				C537B6ED22991F3A0064FD6F /* SMRotaryProtocol.swift in Sources */,
 				C54F5B422292E3B100EA83C2 /* BreatheViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

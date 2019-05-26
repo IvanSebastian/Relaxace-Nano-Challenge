@@ -9,15 +9,16 @@
 import UIKit
 
 class BreatheViewController: UIViewController {
-
+    
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var circleView: UIView!
     var randomX = { return CGFloat.random(in: 50...300)}
     var randomY = { return CGFloat.random(in: 50...300)}
     var i=0
     
-    var gameTimer :Timer?
-    
+    // Dan: Add timer variable here
+    var timer: Timer?
+    var duration = 60
     
     @IBOutlet weak var backgroundView: UIView!
     var colorArray:[UIColor] =
@@ -39,66 +40,72 @@ class BreatheViewController: UIViewController {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(startAnimate))
         gesture.numberOfTapsRequired = 1
         
-backgroundView.isUserInteractionEnabled = true
+        backgroundView.isUserInteractionEnabled = true
         backgroundView.addGestureRecognizer(gesture)
         
-     
-
+        // Dan: Init timer here
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(finishBreathing), userInfo: nil, repeats: true)
         
         //        startAnimate()
         
+    }
+    
+    // Dan: Function to handle timer here
+    @objc func finishBreathing() {
+        duration -= 1
+        if duration == 0 {
+            timer?.invalidate()
+            self.performSegue(withIdentifier: "showWheel", sender: nil)
+        }
+        
+        self.descLabel.text = "\(self.duration)"
+        self.descLabel.alpha = 0.6
     }
     
     @objc func startAnimate ()
     {
         print("start animate")
         
-    
+        
         UIView.animate(withDuration: 4, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.circleView.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
-
-        
             
-           // self.loaded()
-            
-            
-            self.descLabel.text=""
         }) { (_) in
             print("bigger")
         }
     }
     
     
-//    func loaded()
-//    {
-//        i+=1
-//    print("Running")
-//
-//        switch i
-//        {
-//        case 1:
-//            let generator = UINotificationFeedbackGenerator()
-//            generator.notificationOccurred(.error)
-//
-//        case 2:
-//            let generator = UINotificationFeedbackGenerator()
-//            generator.notificationOccurred(.error)
-//
-//        case 3:
-//            let generator = UINotificationFeedbackGenerator()
-//            generator.notificationOccurred(.error)
-//
-//        case 4:
-//            let generator = UINotificationFeedbackGenerator()
-//            generator.notificationOccurred(.error)
-//
-//
-//        default:
-//            let generator = UISelectionFeedbackGenerator()
-//            generator.selectionChanged()
-//            i=0
-//        }
-//    }
+    //    func loaded()
+    //    {
+    //        i+=1
+    //    print("Running")
+    //
+    //        switch i
+    //        {
+    //        case 1:
+    //            let generator = UINotificationFeedbackGenerator()
+    //            generator.notificationOccurred(.error)
+    //
+    //        case 2:
+    //            let generator = UINotificationFeedbackGenerator()
+    //            generator.notificationOccurred(.error)
+    //
+    //        case 3:
+    //            let generator = UINotificationFeedbackGenerator()
+    //            generator.notificationOccurred(.error)
+    //
+    //        case 4:
+    //            let generator = UINotificationFeedbackGenerator()
+    //            generator.notificationOccurred(.error)
+    //
+    //
+    //        default:
+    //            let generator = UISelectionFeedbackGenerator()
+    //            generator.selectionChanged()
+    //            i=0
+    //        }
+    //    }
     
     
     func pickColorArray() -> UIColor

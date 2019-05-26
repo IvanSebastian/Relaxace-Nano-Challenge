@@ -12,7 +12,7 @@ class WheelController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let wheel = SMRotaryWheel(frame: view.frame, delegate: self as! SMRotaryProtocol, numberOFSections: 3)
+        let wheel = SMRotaryWheel(frame: view.frame, delegate: self, numberOFSections: 3)
         view.addSubview(wheel)
 
         
@@ -20,7 +20,7 @@ class WheelController: UIViewController {
 
 }
 
-extension ViewController:SMRotaryProtocol
+extension WheelController:SMRotaryProtocol
 {
     func viewFor(tag: Int) -> UIView {
         let view = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
